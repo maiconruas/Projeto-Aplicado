@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <link rel="shortcut icon" href="/static/assets/icons/favicon.png">
+    <title>{% block titulo %}{% endblock %}Geek Games</title>
+</head>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+
+    <main class="container mt-2 mb-2">
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+
+    {% include 'parciais/_footer.html' %}
+
+</body>
+
+</html>
